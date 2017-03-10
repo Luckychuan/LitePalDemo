@@ -1,9 +1,11 @@
 package com.example.luckychuan.litepaldemo;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by Luckychuan on 2017/3/9.
  */
-public class Book {
+public class Book extends DataSupport {
 
     private int id;
     private String author;

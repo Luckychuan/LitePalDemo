@@ -22,5 +22,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ((Button)findViewById(R.id.insert_btn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Book book = new Book();
+                book.setName("The Da Vinci Code");
+                book.setAuthor("Dan Brown");
+                book.setPages(123);
+                book.setPrice(10.00);
+                book.save();
+            }
+        });
+
     }
 }
